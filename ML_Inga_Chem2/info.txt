@@ -1,0 +1,13 @@
+Constructor - Description of the instance variables
+          self.numLines       :: number of lines in the file
+          self.indexIonBlocks :: python list with (start,end) indices of Ion Blocks
+                                 [start1,end1,start2,end2,.... startn,endn]
+          self.numIonBlocks   :: number of Ion Blocks i.e. len(self.indexIonBlocks)//2
+          self.szIonBlocks    :: number of (mass,abundance) rows in each Ion Block
+          --------------------
+          self.pepmassArr     :: 1D Numpy Vector with the Peptide Mass (one entry per Ion Block)
+          self.nameionArr     :: 1D Numpy Vector with the Name attached to each Ion Block
+          self.massabund      :: 2D Numpy Vector containing on each row
+                                 a (mass,abundance) entry
+          self.blockind       :: 1D Numpy Vector containing the Ion Block Id of the 
+                                    same row in self.massabund
